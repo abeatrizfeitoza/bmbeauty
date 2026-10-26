@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Página Contactos - Estilos exclusivos
+   (navbar, hero base e rodapé base vêm do style.css)
+   ========================================================================== */
+
+:root {
+  --color-primary: #550B14;
+  --color-dark: #2A1A1D;
+  --color-footer-bg: #D3A1A4;
+}
+
+/* Hero com degradê e foto */
+.page-hero.hero-contacto {
+  background-position: center 42%;
+}
+
+.hero-contacto {
+  background-image:
+    linear-gradient(180deg, rgba(160, 158, 158, 0.75) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url('../assets/img/bruna/capa02.jpeg');
+}
+
+/* --------------------------------------------------------------------------
+   Layout base das secções WhatsApp e Instagram
+   -------------------------------------------------------------------------- */
+.contact-split-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 80px 40px;
+}
+
+.contact-text-col {
+  flex: 1;
+  max-width: 520px;
+}
+
+.contact-media-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  margin-top: -50px;
+}
+
+.contact-section-title {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-dark);
+  margin: 0 0 24px 0;
+  line-height: 1.15;
+}
+
+.contact-section-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: #71717A;
+  line-height: 1.6;
+  margin: 0 0 36px 0;
+}
+
+/* --------------------------------------------------------------------------
+   WhatsApp
+   -------------------------------------------------------------------------- */
+.contact-whatsapp-section {
+  background-color: #ffffff;
+}
+
+.whatsapp-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 16px 28px;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-cta-btn i {
+  font-size: 20px;
+}
+
+.whatsapp-cta-btn:hover {
+  background-color: #3f080f;
+  transform: translateY(-2px);
+}
+
+.phone-mockup-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Instagram
+   -------------------------------------------------------------------------- */
+.contact-instagram-section {
+  background-color: #ffffff;
+  border-top: 1px solid #F4F4F5;
+  margin-top: 100px;
+}
+
+.insta-feed-img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.instagram-handle-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.instagram-handle-link i {
+  font-size: 28px;
+}
+
+.instagram-handle-link:hover {
+  color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Rodapé desta página
+   -------------------------------------------------------------------------- */
+.contact-page-footer {
+  background-color: rgba(211, 161, 164, 0.85);
+  padding: 32px 0;
+}
+
+/* ==========================================================================
+   TABLET (768px - 1024px)
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-split-container {
+    gap: 24px;
+    padding: 0 32px 60px 32px;
+  }
+
+  .contact-section-title { font-size: 34px; }
+  .contact-instagram-section { margin-top: 72px; }
+}
+
+/* ==========================================================================
+   MOBILE (até 767.98px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .contact-split-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+  }
+
+  /* Instagram: texto primeiro, imagem depois */
+  .contact-split-container.reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .contact-text-col {
+    max-width: 100%;
+  }
+
+  .contact-media-col {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .contact-section-title { font-size: 30px; margin-bottom: 16px; }
+  .contact-section-desc { margin-bottom: 24px; }
+
+  .phone-mockup-img,
+  .insta-feed-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-instagram-section { margin-top: 40px; padding-top: 40px; }
+
+  .instagram-handle-link,
+  .whatsapp-cta-btn {
+    justify-content: center;
+  }
+
+  .whatsapp-cta-btn { width: 100%; }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BM Beauty - Cabeleireiro e Estética</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- WRAPPER COM A FOTO EM BACKGROUND DO TOPO ATÉ O FIM DO HERO -->
+<div class="top-header-hero">
+  
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo/logo_new_trans.png" alt="BM Beauty Logo">
+    </a>
+
+    <!-- Hambúrguer posicionado logo ao lado da logo -->
+    <button class="hamburger-menu" id="hamburger-btn" aria-label="Abrir Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="index.html#servicos">Serviços</a></li>
+      <li><a href="index.html#equipa">Equipa</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO BANNER CONTENT -->
+  <section class="site-container">
+    <div class="hero-content-wrapper">
+      <h1>Cabeleireiro e Estética</h1>
+      <h2>Especialista em Extensões, Mechas & <br> Alisamento Brasileiro</h2>
+      <a href="#servicos" class="hero-btn">Vê os nossos serviços</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- SEÇÃO 3: SERVIÇOS -->
+<section class="services-section" id="servicos">
+  <div class="site-container">
+    
+    <h2 class="services-title">Cada detalhe é pensado para você se sentir em casa.</h2>
+    <p class="services-subtitle">
+      Na BM Beauty, você tem acesso aos melhores tratamentos.<br>
+      Você merece valorizar a sua autoestima todos os dias!
+    </p>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="assets/img/servicos/serv01.png" alt="Corte e Tratamentos" class="service-card-img">
+        <h3>Corte e Tratamentos</h3>
+        <a href="javascript:void(0)" class="service-card-link" onclick="openModal('assets/img/servicos/card01.png')">Detalhes &gt;</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="assets/img/servicos/serv02.png" alt="Madeixas" class="service-card-img">
+        <h3>Madeixas</h3>
+        <a href="javascript:void(0)" class="service-card-link" onclick="openModal('assets/img/servicos/card02.png')">Detalhes &gt;</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="assets/img/servicos/serv03.png" alt="Alisamento" class="service-card-img">
+        <h3>Alisamento</h3>
+        <a href="javascript:void(0)" class="service-card-link" onclick="openModal('assets/img/servicos/card03.png')">Detalhes &gt;</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <img src="assets/img/servicos/serv04.png" alt="Extensões" class="service-card-img">
+        <h3>Extensões</h3>
+        <a href="javascript:void(0)" class="service-card-link" onclick="openModal('assets/img/servicos/card04.png')">Detalhes &gt;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 4: SOBRE A BM BEAUTY / EQUIPA -->
+<section class="about-section" id="equipa">
+  <div class="site-container about-container">
+    
+    <!-- Foto da equipa -->
+    <div class="about-image-wrapper">
+      <img src="assets/img/bruna/equipa.jpeg" alt="Equipa BM Beauty" class="about-img">
+    </div>
+
+    <!-- Conteúdo de Texto -->
+    <div class="about-content">
+      <h2 class="about-title">Sobre a BM Beauty</h2>
+      <p class="about-subtitle">O seu momento de cuidados pessoais começa aqui.</p>
+      
+      <div class="about-text">
+        <p>Espaço idealizado por <strong>Bruna Manuelle</strong>, profissional brasileira com mais de 16 anos de experiência em coloração, Alongamento e alisamento.</p>
+        <p>A sua grande paixão é ver o sorriso e a emoção de quem passa pelas suas mãos e sai com a autoestima renovada. Para isso, conta com um espaço acolhedor, perfeitamente equipado e preparado para a/o receber.</p>
+        <p>Os cuidados vão muito além do cabelo: aqui encontrará também especialistas em unhas, sobrancelhas e pestanas, tratamentos estéticos e muito mais.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 5: OUTROS SERVIÇOS / GALERIA -->
+<section class="gallery-section" id="galeria">
+  <div class="site-container">
+    
+    <div class="gallery-grid">
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="assets/img/servicos/serv05.jpg" alt="Unhas" class="gallery-img">
+        <h3>Unhas</h3>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="assets/img/servicos/serv06.jpg" alt="Sobrancelhas e Pestanas" class="gallery-img">
+        <h3>Sobrancelhas e<br>Pestanas</h3>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="assets/img/servicos/serv07.jpg" alt="Tratamentos Estéticos" class="gallery-img">
+        <h3>Tratamentos Estéticos</h3>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item">
+        <img src="assets/img/servicos/serv08.jpg" alt="Penteados e Maquiagem" class="gallery-img">
+        <h3>Penteados e<br>Maquiagem</h3>
+      </div>
+    </div>
+
+    <!-- Botão de Agendamento Centralizado -->
+    <div class="gallery-btn-wrapper">
+      <a href="contacto.html" class="gallery-cta-btn">Agenda o vosso atendimento</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 6: FEEDBACK DAS PRINCESAS -->
+<section class="reviews-section" id="reviews">
+  <div class="site-container">
+    
+    <h2 class="reviews-title">Feedback das Princesas</h2>
+
+    <!-- Carrossel Infinito de Avaliações -->
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-track">
+        <!-- 3 Imagens das Avaliações (Conjunto Principal) -->
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback01.png" alt="Avaliação 1" class="review-img">
+        </div>
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback02.png" alt="Avaliação 2" class="review-img">
+        </div>
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback03.png" alt="Avaliação 3" class="review-img">
+        </div>
+
+        <!-- Duplicação para Animação Infinita Contínua -->
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback01.png" alt="Avaliação 1" class="review-img">
+        </div>
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback02.png" alt="Avaliação 2" class="review-img">
+        </div>
+        <div class="review-card">
+          <img src="assets/img/feedbacks/feedback03.png" alt="Avaliação 3" class="review-img">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 7: PERGUNTAS E RESPOSTAS (FAQ) -->
+<section class="faq-section" id="faq">
+  <div class="site-container faq-container">
+    
+    <div class="faq-header">
+      <h2 class="faq-title">Perguntas e Respostas</h2>
+      <p class="faq-subtitle">Encontre aqui as principais dúvidas do público</p>
+    </div>
+
+    <div class="faq-list">
+      <!-- Pergunta 1 (aberta por padrão) -->
+      <details class="faq-item" name="faq-accordion" open>
+        <summary class="faq-question">
+          <span>Qual o tempo de duração de um serviço?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Corte - De 40 minutos a 1 hora</p>
+          <p>Coloração - Em média 2 horas</p>
+          <p>Alisamento Brasileiro - De 3 a 4 horas</p>
+          <p>Tratamentos - Em média 1 horas</p>
+          <p>Extensões - De 2 a 3 horas</p>
+        </div>
+      </details>
+
+      <!-- Pergunta 2 -->
+      <details class="faq-item" name="faq-accordion">
+        <summary class="faq-question">
+          <span>Os procedimentos incluem hidratação e lavagem?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Sim, todos os nossos serviços principais de cabelo incluem lavagem especial e tratamento de hidratação adequado ao seu tipo de fio.</p>
+        </div>
+      </details>
+
+      <!-- Pergunta 3 -->
+      <details class="faq-item" name="faq-accordion">
+        <summary class="faq-question">
+          <span>Como é feito o pagamento?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          Para garantir a sua vaga na agenda, solicitamos 50% do valor no agendamento e os restantes 50% no final do seu serviço.
+        </div>
+      </details>
+
+      <!-- Pergunta 4 -->
+      <details class="faq-item" name="faq-accordion">
+        <summary class="faq-question">
+          <span>Quais formas de pagamento são aceitas?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>Aceitamos numerário, MB WAY, cartões de crédito</p>
+        </div>
+      </details>
+
+      <!-- Pergunta 5 -->
+      <details class="faq-item" name="faq-accordion">
+        <summary class="faq-question">
+          <span>Como faço para agendar o meu serviço?</span>
+          <span class="faq-icon"></span>
+        </summary>
+        <div class="faq-answer">
+          <p>
+            Pode agendar diretamente pelo botão de agendamento aqui no site, 
+            via <a href="https://wa.me/351922003194" target="_blank" rel="noopener noreferrer" class="faq-whatsapp-link">WhatsApp</a> 
+            ou ligando diretamente para o nosso salão.
+          </p>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 8: LOCALIZAÇÃO, HORÁRIOS E FOOTER INTEGRADO -->
+<footer class="footer-section" id="contactos">
+  
+  <!-- Overlay Gradiente sobre a foto de fundo -->
+  <div class="footer-bg-overlay"></div>
+
+  <!-- Bloco Principal: Mapa e Horários -->
+  <div class="site-container location-container">
+    
+    <!-- Iframe do Mapa -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.888741366113!2d-8.5866118!3d41.1706691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464f1d0b55555%3A0x0!2sAv.%20de%20Fern%C3%A3o%20de%20Magalh%C3%A3es%203548%2C%20Porto!5e0!3m2!1wpt-PT!2spt!4v1700000000000" 
+      width="426" 
+      height="238" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      class="location-map">
+    </iframe>
+
+    <!-- Card de Horários -->
+    <div class="schedule-card">
+      <h3 class="schedule-title">Horários de Funcionamento</h3>
+      
+      <div class="schedule-info">
+        <p>Qua - Sex 10:00 às 19:00</p>
+        <p>Sábados 10:00 às 18:00</p>
+        <p>Dom - Seg Encerrado</p>
+      </div>
+
+      <div class="schedule-action">
+        <span class="schedule-phone">+351 922 003 194</span>
+        <a href="contacto.html" class="schedule-btn">Marca connosco</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Linha Inferior do Footer -->
+  <div class="footer-bottom">
+    <div class="site-container footer-bottom-container">
+      
+      <!-- Logo à Esquerda -->
+      <div class="footer-logo">
+        <a href="#" aria-label="Voltar ao topo">
+        <img src="assets/img/logo/logo-longo.png" alt="BM Beauty Cabeleireiro e Estética">
+        </a>
+      </div>
+
+      <!-- Morada e Redes Sociais à Direita -->
+      <div class="footer-contacts">
+        
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="footer-address">
+          Av. de Fernão de Magalhães 3548 1 andar, Sala 14, 4350-175 Porto
+        </a>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/bmbeauty.pt/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/351922003194" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/bmbeauty.pt" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+<!-- MODAL DE DETALHES -->
+<div id="service-modal" class="modal-overlay">
+  <div class="modal-card">
+    
+    <!-- Área clicável para fechar no 'X' -->
+    <div id="modal-close-trigger" class="modal-close-hitbox"></div>
+
+    <!-- Imagem dinâmica do modal -->
+    <img id="modal-img" src="" alt="Detalhes do Serviço">
+
+    <!-- Área clicável invisível para o botão AGENDAR -->
+    <a href="contacto.html" class="btn-overlay" aria-label="Agendar serviço"></a>
+
+  </div>
+</div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>

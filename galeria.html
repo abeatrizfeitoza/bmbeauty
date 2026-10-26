@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BM Beauty - Galeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+
+  <!-- NAVBAR (destaque em "Galeria") -->
+  <header class="site-container">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo/logo_new_trans.png" alt="BM Beauty Logo" width="97" height="73">
+      </a>
+
+      <button class="hamburger-menu" id="hamburger-btn" aria-label="Abrir Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#equipa">Equipa</a></li>
+        <li><a href="galeria.html" class="nav-link-active">Galeria</a></li>
+        <li><a href="contacto.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO GALERIA -->
+  <section class="page-hero hero-galeria">
+    <div class="hero-content">
+      <h1 class="hero-title">Conheça o nosso espaço</h1>
+    </div>
+  </section>
+
+  <!-- FRASINHA E GRELHA DE FOTOS -->
+  <section class="gallery-grid-section">
+    <div class="site-container">
+      
+      <p class="gallery-intro-text">
+        Um ambiente pensado para o máximo conforto, com equipamentos<br>
+        e produtos de alta qualidade, na melhor localização do Porto.
+      </p>
+
+      <!-- Grelha de Fotos -->
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0"><img src="assets/img/espaco/esp01.jpeg" alt="Espaço BM Beauty 1"></div>
+        <div class="gallery-item" data-index="1"><img src="assets/img/espaco/esp02.jpeg" alt="Espaço BM Beauty 2"></div>
+        <div class="gallery-item" data-index="2"><img src="assets/img/espaco/esp03.jpeg" alt="Espaço BM Beauty 3"></div>
+        <div class="gallery-item" data-index="3"><img src="assets/img/espaco/esp04.jpeg" alt="Espaço BM Beauty 4"></div>
+        <div class="gallery-item" data-index="4"><img src="assets/img/espaco/esp05.jpeg" alt="Espaço BM Beauty 5"></div>
+        <div class="gallery-item" data-index="5"><img src="assets/img/espaco/esp06.jpeg" alt="Espaço BM Beauty 6"></div>
+        <div class="gallery-item" data-index="6"><img src="assets/img/espaco/esp07.jpeg" alt="Espaço BM Beauty 7"></div>
+        <div class="gallery-item" data-index="7"><img src="assets/img/espaco/esp08.jpeg" alt="Espaço BM Beauty 8"></div>
+        <div class="gallery-item" data-index="8"><img src="assets/img/espaco/esp09.jpeg" alt="Espaço BM Beauty 9"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL / LIGHTBOX COM BLUR E SETAS DE NAVEGAÇÃO -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close">&times;</span>
+    
+    <button class="lightbox-arrow arrow-left" id="prevBtn" aria-label="Anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Foto Ampliada">
+    </div>
+
+    <button class="lightbox-arrow arrow-right" id="nextBtn" aria-label="Seguinte">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-bottom contact-page-footer">
+    <div class="site-container footer-bottom-container">
+      <div class="footer-logo">
+        <a href="#" aria-label="Voltar ao topo">
+        <img src="assets/img/logo/logo-longo.png" alt="BM Beauty">
+        </a>
+      </div>
+      <div class="footer-contacts">
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="footer-address">
+          Av. de Fernão de Magalhães 3548 1 andar, Sala 14, 4350-175 Porto
+        </a>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/bmbeauty.pt/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/351922003194" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/bmbeauty.pt" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/galeria.js" defer></script>
+  
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Página Galeria - Estilos exclusivos
+   (navbar, hero base e rodapé base vêm do style.css)
+   ========================================================================== */
+
+/* Hero com degradê e foto */
+.page-hero.hero-galeria {
+  background-position: center 55%;
+}
+
+.hero-galeria {
+  background-image:
+    linear-gradient(180deg, rgba(160, 158, 158, 0.75) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url('../assets/img/espaco/esp01.jpeg');
+}
+
+/* Frase introdutória */
+.gallery-intro-text {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #71717A;
+  line-height: 1.6;
+  margin: 60px 0 48px 0;
+}
+
+/* Grelha 3 colunas */
+.gallery-grid-section {
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+.gallery-grid-section .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-grid-section .gallery-item {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid-section .gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-grid-section .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rodapé desta página */
+footer.footer-bottom,
+.contact-page-footer {
+  background-color: #E2BDBC;
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* ==========================================================================
+   LIGHTBOX (blur + setas)
+   ========================================================================== */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(42, 26, 29, 0.6);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-modal.active {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80vh;
+  position: relative;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10000;
+}
+
+.lightbox-arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow-left  { left: 40px; }
+.arrow-right { right: 40px; }
+
+/* ==========================================================================
+   TABLET (768px - 1024px)
+   ========================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery-grid-section .gallery-grid { gap: 24px; }
+  .gallery-grid-section .gallery-item { height: 260px; }
+}
+
+/* ==========================================================================
+   MOBILE (até 767.98px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .gallery-intro-text { margin: 36px 0 32px; }
+  .gallery-intro-text br { display: none; }
+
+  .gallery-grid-section { padding-bottom: 56px; }
+  .gallery-grid-section .gallery-grid { grid-template-columns: 1fr; gap: 20px; }
+  .gallery-grid-section .gallery-item { height: 280px; }
+
+  .lightbox-arrow { width: 44px; height: 44px; font-size: 20px; }
+  .arrow-left  { left: 12px; }
+  .arrow-right { right: 12px; }
+  .lightbox-close { right: 20px; }
+  .lightbox-content { max-width: 92%; }
+}
